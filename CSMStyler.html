@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+	<title>CSM Styler v.1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="csmStyler.js"></script>
+</head>
+<body>
+    <h1>Thanks for using the CSM Styler!</h1>
+    <section>
+    <h2><i>Dashboard Buttons</i></h2>
+            <form>
+                 Base Color: <input type="text" id="dbBase" /><br>
+                 Hover Color: <input type="text" id="dbHover" /><br>
+                 Font Color: <input type="text" id="dbFont" /><br>
+                 Border Radius: <select id="border">
+                                    <option value="5px">Partial</option>
+                                    <option value="40px">Medium</option>
+                                    <option value="100px">Rounded</option>
+                                </select><br>
+                <input type="button" id="dbStyles" onClick="dbBtnGen()" style="margin-top: 7px" Value="Get Style">
+            </form>
+            <p>Here is your design code! Please copy and paste into Custom CSS Field: <br>
+                <span id="dbOutput"></span>
+            </p>    
+     </section>
+     <section>
+     <h2><i>Dashboard Widget</i></h2>
+            <form>
+                 Active Color: <input type="text" id="widActive" /><br>
+                 Hover Color: <input type="text" id="widHover" /><br>
+                 Inactive Color: <input type="text" id="widInact" /><br>
+                 
+                <input type="button" id="widStyles" onClick="widBtnGen()" style="margin-top: 7px" Value="Get Style">
+            </form>
+            <p>Here is your design code! Please copy and paste into Custom CSS Field: <br>
+                <span id="widActOutp"></span><br>
+                <span id="widHovOutp"></span><br>
+                <span id="widInactOutp"></span><br>
+            </p>    
+     </section>
+    
+</body>
+</html>

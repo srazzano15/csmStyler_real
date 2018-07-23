@@ -1,0 +1,14 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkred;
+    color: antiquewhite;
+}
+input, select {
+    margin-top: 7px;
+    position: left 10px;
+}
+span {
+    color:cornflowerblue;
+    font-style: italic;
+    font-weight: bold;
+}
